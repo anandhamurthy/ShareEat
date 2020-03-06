@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="56dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp">
+
+            <Switch
+                android:id="@+id/need_food"
+                android:layout_width="match_parent"
+                android:fontFamily="@font/nunito_bold"
+                android:layout_height="wrap_content"
+                android:text="Need Food" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/total_people_text">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:hint="Total People"
+                    android:inputType="number"
+                    android:id="@+id/total_people"
+                    app:fontFamily="@font/nunito"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/kg_text">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:hint="Food Needed in Kg"
+                    android:inputType="number"
+                    android:id="@+id/kg"
+                    app:fontFamily="@font/nunito"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <RadioGroup
+                android:id="@+id/food_type"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/veg"
+                    android:layout_weight="1"
+                    android:text="Veg"
+                    android:fontFamily="@font/nunito"
+                    android:textSize="20dp"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/non_veg"
+                    android:fontFamily="@font/nunito"
+                    android:text="Non-Veg"
+                    android:layout_weight="1"
+                    android:textSize="20dp"/>
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/delivery"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/self"
+                    android:layout_weight="1"
+                    android:text="Self Pick"
+                    android:fontFamily="@font/nunito"
+                    android:textSize="20dp"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/drop"
+                    android:text="Drop"
+                    android:fontFamily="@font/nunito"
+                    android:layout_weight="1"
+                    android:textSize="20dp"/>
+            </RadioGroup>
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:text="Update"
+                android:textSize="16dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/update"
+                android:background="@color/colorBlack"
+                android:textColor="@color/colorWhite"
+                android:fontFamily="@font/nunito_bold"
+                android:layout_height="wrap_content"/>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/register_buttons"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/donated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="28dp"
+            android:src="@drawable/donated"
+            app:borderWidth="0dp"
+            app:elevation="6dp"
+            app:pressedTranslationZ="12dp" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="28dp"
+            android:src="@drawable/notification"
+            app:borderWidth="0dp"
+            app:elevation="6dp"
+            app:pressedTranslationZ="12dp" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:background="@color/colorBackground"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:id="@+id/notification_name"
+        android:fontFamily="@font/nunito_bold"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@+id/notification_name"
+        android:id="@+id/notification_phone"
+        android:fontFamily="@font/nunito_bold"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@+id/notification_phone"
+        android:id="@+id/notification_message"
+        android:fontFamily="@font/nunito_bold"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@+id/notification_message"
+        android:id="@+id/notification_food_name"
+        android:layout_toRightOf="@+id/notification_food_type"
+        android:fontFamily="@font/nunito_bold"
+        android:textColor="@color/colorWhite"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@+id/notification_message"
+        android:id="@+id/notification_food_type"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@+id/notification_food_type"
+        android:id="@+id/notification_quantity"
+        android:fontFamily="@font/nunito_bold"
+        android:textColor="@color/colorWhite"
+        android:textSize="15sp" />
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@+id/notification_quantity"
+        android:id="@+id/notification_address"
+        android:fontFamily="@font/nunito_bold"
+        android:textColor="@color/colorWhite"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@+id/notification_address"
+        android:id="@+id/notification_distance"
+        android:fontFamily="@font/nunito_bold"
+        android:textColor="@color/colorWhite"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@+id/notification_distance"
+        android:id="@+id/notification_best_before"
+        android:fontFamily="@font/nunito_bold"
+        android:textColor="@color/colorWhite"
+        android:textSize="15sp" />
+</RelativeLayout>

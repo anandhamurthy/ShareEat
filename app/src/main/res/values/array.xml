@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string-array name="Sources">
+        <item>Food Source</item>
+        <item>Hotel</item>
+        <item>Restaurant</item>
+        <item>Canteen</item>
+        <item>Bakery</item>
+        <item>Function</item>
+        <item>College</item>
+
+    </string-array>
+
+    <string-array name="Non_Veg">
+        <item>Chicken-Biriyani</item>
+        <item>Chicken</item>
+        <item>ChickenGravy</item>
+        <item>FishGravy</item>
+        <item>Mutton</item>
+        <item>MuttonGravy</item>
+        <item>Fish</item>
+        <item>Puffs</item>
+    </string-array>
+
+    <string-array name="Veg">
+        <item>Idly</item>
+        <item>Dosa</item>
+        <item>Upma</item>
+        <item>Chapathi</item>
+        <item>Curd Rice</item>
+        <item>Parotta</item>
+        <item>Pongal</item>
+        <item>Veg-Biriyani</item>
+        <item>Lemon Rice</item>
+        <item>PuliSadham</item>
+        <item>Vadai</item>
+        <item>Rasam</item>
+        <item>Sambar</item>
+        <item>Fruit</item>
+        <item>Poori-Masala</item>
+        <item>Sweets</item>
+        <item>WhiteRice</item>
+        <item>Curd</item>
+        <item>Uthappam</item>
+        <item>Biscuits</item>
+        <item>PlainCake</item>
+        <item>Samosa</item>
+        <item>Puffs</item>
+        <item>CreamCake</item>
+        <item>Sweets</item>
+    </string-array>
+</resources>
